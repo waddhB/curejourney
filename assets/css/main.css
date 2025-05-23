@@ -3297,3 +3297,8 @@ input, select, textarea {
     cursor: pointer;
     color: #555;
 }
+
+
+#footer_new{
+	justify-content: center;
+}
