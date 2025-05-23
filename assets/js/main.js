@@ -118,18 +118,3 @@ const donateButton = document.getElementById('donate_btn');
 const modalOverlay = document.getElementById('modalOverlay');
 const donationModal = document.getElementById('donationModal');
 const closeModal = document.getElementById('closeModal');
-
-// Show the modal when the Donate button is clicked
-donateButton.addEventListener('click', () => {
-    modalOverlay.style.display = 'block';
-    donationModal.style.display = 'block';
-});
-
-// Hide the modal when the overlay or close button is clicked
-modalOverlay.addEventListener('click', closeDonationModal);
-closeModal.addEventListener('click', closeDonationModal);
-
-function closeDonationModal() {
-    modalOverlay.style.display = 'none';
-    donationModal.style.display = 'none';
-}
