@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="ar" dir="rtl">
+	<head>
+		<title>التسجيل - رحلة علاج</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<h1 id="logo">التسجيل</h1>
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<p>الرجاء تعبئة كل البيانات المطلوبة</p>
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">الرئيسية</a></li>
+						<li class="current"><a href="sing_up.html">التسجيل</a></li>
+						<li><a href="profile.html">الملف الشخصي</a></li>
+						<li><a href="contact_us.html">التواصل معنا</a></li>
+					</ul>
+				</nav>
+
+				<section id="main">
+					<div class="container">
+						<form id="userDetailsForm" action="#" method="POST">
+							<div class="grid-container">
+								<!-- Full Name -->
+								<div class="form-group">
+									<label for="fullName">الأسم بالكامل</label>
+									<input type="text" id="fullName" name="fullName" required>
+								</div>
+				
+								<!-- Email -->
+								<div class="form-group">
+									<label for="email">البريد الإلكتروني</label>
+									<input type="email" id="email" name="email" required>
+								</div>
+				
+								<!-- Password -->
+								<div class="form-group">
+									<label for="password">أختيار رقم سري</label>
+									<input type="password" id="password" name="password" required>
+								</div>
+				
+								<!-- Phone Number -->
+								<div class="form-group">
+									<label for="phone">رقم الهاتف</label>
+									<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+								</div>
+				
+								<!-- Date of Birth -->
+								<div class="form-group">
+									<label for="dob">تاريخ الميلاد</label>
+									<input type="date" id="dob" name="dob" required>
+								</div>
+				
+								<!-- Gender -->
+								<div class="form-group">
+									<label for="gender">الجنس</label>
+									<select id="gender" name="gender" required>
+										<option value="" disabled selected>يرجى الأختيار</option>
+										<option value="male">ذكر</option>
+										<option value="female">أنثى</option>
+										<option value="other">أخرى</option>
+									</select>
+								</div>
+				
+								<!-- Address -->
+								<div class="form-group">
+									<label for="address">العنوان</label>
+									<textarea id="address" name="address" rows="2" required></textarea>
+								</div>
+								
+								<!-- Disaease Type -->
+								<div class="form-group">
+									<label for="diseases">يرجى اختيار الأمراض التي تعاني منها (يمكنك اختيار أكثر من خيار):</label>
+									<select id="diseases" name="diseases[]" multiple required>
+									  <option value="heart_disease">أمراض القلب</option>
+									  <option value="diabetes">السكري</option>
+									  <option value="hypertension">ارتفاع ضغط الدم</option>
+									  <option value="cancer">السرطان</option>
+									  <option value="respiratory_disease">أمراض الجهاز التنفسي</option>
+									  <option value="kidney_disease">أمراض الكلى</option>
+									  <option value="liver_disease">أمراض الكبد</option>
+									  <option value="neurological_disorder">اضطرابات الأعصاب</option>
+									  <option value="orthopedic_issue">مشاكل العظام</option>
+									  <option value="digestive_disorder">مشاكل الجهاز الهضمي</option>
+									  <option value="skin_disease">أمراض الجلد</option>
+									  <option value="eye_disease">مشاكل العيون</option>
+									  <option value="ear_nose_throat">مشاكل الأذن والأنف والحنجرة</option>
+									  <option value="mental_health">مشاكل الصحة النفسية</option>
+									  <option value="infectious_disease">الأمراض المعدية</option>
+									  <option value="other">أخرى (يرجى التوضيح)</option>
+									</select>
+								  </div>
+								  
+								  <!-- If "Other" is selected -->
+								  <div class="form-group">
+									<label for="otherDisease">إذا اخترت "أخرى"، يرجى تحديد المرض هنا:</label>
+									<input type="text" id="otherDisease" name="otherDisease" placeholder="اكتب المرض هنا">
+								  </div>							  
+
+								<!-- Description -->
+								<div class="form-group">
+									<label for="description">وصف مختصر للمرض</label>
+									<textarea id="description" name="description" rows="2" required></textarea>
+								</div>
+
+				
+								<!-- Upload -->
+								<div class="form-group">
+									<label for="upload">إرفاق صور الفحوصات الطبية</label>
+									<input type="file" id="upload">
+								</div>
+				
+								<!-- Home Search -->
+								<div class="form-group">
+									<label for="home_search">هل تريد منا مساعدتك لإيجاد سكن</label>
+									<select id="home_search" name="home_search" required>
+										<option value="" disabled selected>يرجى الأختيار</option>
+										<option value="yes">نعم</option>
+										<option value="no">لا</option>
+									</select>
+								</div>
+				
+								<!-- Submit Button -->
+								<div class="form-group full-width">
+									<button type="submit">تسجيل</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-12">
+
+								<!-- About -->
+									<section>
+										<h2 class="major"><span>What's this about?</span></h2>
+										<p>
+											This is <strong>TXT</strong>, yet another free responsive site template designed by
+											<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
+											<a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
+											whatever you're working on (personal or commercial), just be sure to give us credit for the design.
+											That's basically it :)
+										</p>
+									</section>
+
+							</div>
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section>
+										<h2 class="major"><span>Get in touch</span></h2>
+										<ul class="contact">
+											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+											<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+											<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+											<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</section>
+
+							</div>
+						</div>
+
+						<!-- Copyright -->
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</div>
+
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
