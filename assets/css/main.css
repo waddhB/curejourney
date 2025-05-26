@@ -3315,7 +3315,15 @@ textarea {
 }
 
 textarea:focus {
-	border-color: #007BFF;
+	border-color: #15a689;
 	outline: none;
 	box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+#hospitals_container{
+  display: flex;
+  overflow-x: auto;         /* Enables horizontal scrolling */
+  gap: 1rem;                /* Optional spacing between cards */
+  padding: 1rem;
+  scroll-snap-type: x mandatory; /* Optional: smooth scrolling */
 }
